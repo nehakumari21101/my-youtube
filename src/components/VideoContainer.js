@@ -22,7 +22,7 @@ const  VideoContainer = () => {
       {/* <VideoCart info={videos[0]}/> */}
       {videos.map( video => 
       
-    <Link to={"/watch?v=" + video.id}><VideoCart key={video.id} info={video}/></Link>)}
+    <Link to={"/watch?v=" + video.id} key={video.id} ><VideoCart info={video}/></Link>)}
     </div>
   )
 }

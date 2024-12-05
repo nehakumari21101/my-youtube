@@ -6,7 +6,7 @@ const  Sidebar = () => {
 
   if(!isMenuOpen) return null;
   return (
-    <div className='shadow w-46 p-5 h-4/5' style={{height:"511px"}}>
+    <div className='shadow w-46 p-5 h-4/5 sticky top-16'  style={{height:"511px"}}>
       <ul>
         <li>Home</li>
         <li>Shorts</li>
