@@ -96,10 +96,10 @@ const CommentsList = ({ comments }) => {
     <div>
       {comments.map((comment, index) => (
         <div>
-          <Comment key={index} data={comment} />
+          <Comment  data={comment} />
 
           <div className="ml-5 border border-l-black">
-            <CommentsList comments={comment.replies} />
+            <CommentsList key={index} comments={comment.replies} />
           </div>
         </div>
       ))}

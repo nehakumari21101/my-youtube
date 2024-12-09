@@ -29,7 +29,7 @@ const WatchPage = () => {
         className="rounded-lg"
       ></iframe>
       </div>
-      <div className="w-[400px] border ml-5 p-2 bg-slate-100">
+      <div className="">
         <LiveChat/>
       </div>
     </div>
