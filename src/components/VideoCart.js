@@ -1,8 +1,9 @@
+import moment from 'moment';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
 const VideoCart = ({info}) => {
-    // console.log(info);
+    console.log(info);
     const { snippet, statistics } = info;
     const { channelTitle, title, thumbnails } = snippet;
   return (
@@ -11,7 +12,7 @@ const VideoCart = ({info}) => {
         <ul>
             <li className='font-bold py-2'>{title}</li>
             <li>{channelTitle}</li>
-            <li>{statistics.viewCount} views</li>
+            <li>{statistics.viewCount} views &bull; {moment(info.snippet.publishedAt).fromNow()}</li>
         </ul>
     </div>
   )
